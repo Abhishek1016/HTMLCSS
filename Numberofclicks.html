@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countclick</title>
+</head>
+<body>
+    <button id="clickbutton" onclick="count()">Click</button>
+    <div>
+        <p id="print"> </p>
+    </div>
+
+</body>
+<script type="text/javascript">
+    let count1=0
+    function count()
+    {
+        document.getElementById('print').innerHTML=count1++
+        count1=count1
+    }
+    //clickbutton.addEventListner('click',count)
+    // const newdiv=document.createElement('div')
+    // const count1=document.createTextNode.textcontent('count')
+    // newdiv.appendChild(count1)
+    // body.append(newdiv)
+    
+</script>
+</html>
