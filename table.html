@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="Body">
+    <button id="clickbutton" onclick="create()">click to create</button>
+
+
+</body>
+<script>
+    function create()
+    {
+        let rownumber=prompt("Enter row number")
+        let colnumber=prompt("Enter column number")
+        let table=document.createElement('table')
+        let tablebody = document.createElement('tablebody');
+        for(let i=0;i<rownumber;i++)
+        {
+            let row = document.createElement('tr');
+            for(let j=0;j<colnumber;j++)
+            {
+                let rowdata = document.createElement('td');
+               const row =document.createtext(i+","+j)
+               tablebody.append(row)
+               table.append(tablebody)
+            //let rowdata = document.createElement('td');
+            //rowdata.innerHTML = rownumber+","+colnumber;
+
+            row.appendChild(rowdata)
+            }
+        }
+    }
+    document.getElementById('body').appendChild(table);
+</script>
+</html>
