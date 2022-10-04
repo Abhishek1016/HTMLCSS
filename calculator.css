@@ -1,0 +1,30 @@
+.calculatorbody{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*for inbuilt tag we should'nt be using # / .  */
+table  
+{
+    margin:auto;
+}
+button{
+    font-size: large;
+    width: 51px;
+    height: 50px;
+    background-color: cadetblue;
+    border-radius: 5px;
+
+}
+input{
+    font-size: 17px;
+    background-origin: padding-box;
+    border-radius: 5px;
+}
+.tablebody{
+    border: aquamarine;
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+}
