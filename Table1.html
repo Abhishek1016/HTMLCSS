@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <button onclick="create()">click to create</button>
+
+
+</body>
+<script>
+    function create()
+    {
+        let rownumber=parseInt(prompt("Enter row number"))
+        let colnumber=parseInt(prompt("Enter column number"))
+        // let rownumber1=parseInt(rownumber)
+        // let colnumber1=parseInt(colnumber)
+        const table=document.createElement('table')
+        // const tablebody = document.createElement('tablebody');
+        for(let i=0;i<rownumber;i++)
+        {
+            let row = document.createElement('tr');
+            for(let j=0;j<colnumber;j++)
+            {
+            const rowdata = document.createElement('td');
+            row.appendChild(rowdata)
+            rowdata.innerHTML=i+""+j
+            }
+            // tablebody.appendChild(row)
+            table.appendChild(row)
+        }
+        document.body.appendChild(table);
+    }
+</script>
+</html>
